@@ -33,7 +33,7 @@ const index = () => {
   return (
     <div>
       <div
-        className="relative text-white h-[32rem] flex flex-col justify-center items-center text-center p-12"
+        className="relative text-white p-6 md:p-12 h-[20rem] md:h-[32rem] flex flex-col justify-center items-center text-center "
       >
         <Image 
         src={servicesImg.src}
@@ -43,18 +43,18 @@ const index = () => {
         quality={80}
         className="absolute inset-0 -z-30 -mt-18"
         />
-        <h1 className="text-6xl font-semibold">Our Services</h1>
-        <p className="max-w-2xl mt-4">
+        <h1 className="text-3xl md:text-6xl font-semibold">Our Services</h1>
+        <p className="max-w-xs sm:max-w-md md:max-w-2xl mt-4">
           Exposing clients to goldmine that abounds in land and housing globally
           and spreading empowerment through real estate opportunities.
         </p>
       </div>
-      <div className="bg-gray-100 p-18 -mt-18 flex flex-col items-center">
+      <div className="bg-gray-100 p-4 md:p-18 -mt-18 flex flex-col items-center">
         <span className="text-red-600">▲ What we Offer</span>
         <h2 className="text-2xl font-semibold">Our Expert Real Estate Services</h2>
 
-        <div className="flex flex-row gap-7 mt-6">
-          <div className="grid grid-cols-1 gap-4 w-1/3 max-w-5xl">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-7 mt-6">
+          <div className="grid grid-cols-1 gap-4 w-full md:w-1/3 max-w-5xl">
             {services.map((service) => (
               <ServiceTab
                 key={service.title}
@@ -66,8 +66,8 @@ const index = () => {
           </div>
 
           {activeService && (
-            <div className="bg-white rounded shadow p-6 flex flex-col md:flex-row mt-8 w-full max-w-5xl">
-              <div className="rounded flex justify-center items-center w-full md:w-md">
+            <div className="bg-white rounded shadow p-6 flex flex-col md:flex-row mt-8 w-full md:max-w-5xl">
+              <div className="rounded flex justify-center items-center w-full md:w-[400px]">
                 <Image
                   src={realEstate.src}
                   alt="realestate"

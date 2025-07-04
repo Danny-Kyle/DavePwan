@@ -2,10 +2,10 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <div className="py-14 px-18 gap-16 mx-12 rounded-lg flex flex-row">
+    <div className="py-14 px-4 md:px-18 gap-16 mx-12 rounded-lg flex flex-col md:flex-row">
       <div className="flex flex-col gap-4">
         <h2 className="text-xl font-semibold mb-4">Contact Details</h2>
-        <span className="flex flex-row text-wrap gap-8">
+        <span className="flex flex-col md:flex-row gap-4 md:gap-8">
           <p>
             <strong>Email:</strong> info@pwanelite.com, pwanelites@gmail.com
           </p>

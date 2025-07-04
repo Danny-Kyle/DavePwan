@@ -48,7 +48,7 @@ const index = () => {
             </div>
           </header>
 
-          <h1 className="text-6xl text-wrap font-semibold text-center mb-8">
+          <h1 className="text-xl md:text-5xl text-wrap font-semibold text-center mb-8">
             We are always ready to help you and answer your questions
           </h1>
         </main>
@@ -62,7 +62,7 @@ const index = () => {
             <span className="mr-2">✨</span> Frequently Asked Questions
           </div>
         </header>
-          <h1 className="text-5xl font-semibold text-center capitalize mb-8">
+          <h1 className="md:text-5xl text-2xl font-semibold text-center capitalize mb-8">
             Your Common Queries Answered with Additional FAQs
           </h1>
             <FAQSection faqs={faqs} />
