@@ -9,8 +9,8 @@ export const HomeExp = ({ image, title, description, layout = "left", textOverla
     />
     <div className={`absolute inset-0 bg-black opacity-60 flex items-end ${textOverlay ? 'justify-center' : ''}`}>
       <div className={`p-6 relative text-white ${textOverlay ? 'text-center' : ''} ${layout === 'right' ? 'ml-auto max-w-xs' : 'max-w-sm'}`}>
-        <h3 className="text-2xl relative font-semibold mb-4">{title}</h3>
-        <p className="text-sm font-light relative leading-relaxed">
+        <h3 className="md:text-2xl text-lg relative font-semibold mb-4">{title}</h3>
+        <p className="md:text-sm text-xs font-light relative leading-relaxed">
           {description}
         </p>
       </div>

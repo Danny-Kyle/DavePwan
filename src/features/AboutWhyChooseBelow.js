@@ -87,7 +87,7 @@ const AboutWhyChooseBelow = () => {
           flexDirection = 'row'
           title="Meet Our Team"
           items={teamMembers}
-          description="Lorem ipsum dolor sit amet consectetur. Feugiat tortor morbi dictum egestas donec mus at porttitor. Magna facilisis duis nunc porttitor metus suspendisse turpis dignissim."
+          // description="Lorem ipsum dolor sit amet consectetur. Feugiat tortor morbi dictum egestas donec mus at porttitor. Magna facilisis duis nunc porttitor metus suspendisse turpis dignissim."
           type="team"
           columns={4}
         />

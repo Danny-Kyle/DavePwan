@@ -41,7 +41,7 @@ const AWCBSection = ({
           <h2 className="text-3xl font-semibold mb-4">{title}</h2>
         </div>
 
-        {description && <div className="w-2xl">{description}</div>}
+        {description && <div className="md:text-lg text-sm text-wrap w-md md:w-2xl">{description}</div>}
       </article>
 
       {/* {description && <p className="text-gray-700 mb-6"></p>} */}

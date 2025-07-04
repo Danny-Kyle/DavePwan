@@ -12,23 +12,23 @@ export const HomeValues = ({ title, mission, vision, coreValues }) => (
         </span>
       </div>
       
-      <h2 className="text-4xl md:text-5xl font-light mb-12">
+      <h2 className="text-xl md:text-5xl font-light mb-12">
         {title}
       </h2>
       
       <div className="max-w-4xl text-center mx-auto">
         
-        <p className="text-2xl leading-relaxed text-center px-4 max-w-3xl mx-auto font-light mb-4">
+        <p className="md:text-2xl text-xl leading-relaxed text-center px-4 max-w-3xl mx-auto font-light mb-4">
             <span className="font-semibold">Our Vision: </span>{" "}
             {vision}
           </p>
         
-        <p className="text-2xl leading-relaxed text-center px-4 max-w-3xl mx-auto font-light mb-4">
+        <p className="md:text-2xl text-xl leading-relaxed text-center px-4 max-w-3xl mx-auto font-light mb-4">
             <span className="font-semibold">Our Mission: </span>{" "}
             {mission}
           </p>
         
-        <p className="text-2xl leading-relaxed text-center px-4 max-w-3xl mx-auto font-light mb-4">
+        <p className="md:text-2xl text-xl leading-relaxed text-center px-4 max-w-3xl mx-auto font-light mb-4">
             <span className="font-semibold">Core Values: </span>{" "}
             {coreValues}
           </p>
