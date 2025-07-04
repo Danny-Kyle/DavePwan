@@ -60,7 +60,10 @@ const HomeCert = () => {
                            : "bg-[#150569] hover:bg-blue-700 text-white cursor-pointer shadow-md hover:shadow-lg"
                        }`}
       >
-        Previous
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+</svg>
+
       </span>
 
       <div className="relative justify-center items-center bg-[#DEE0F4] h-[48rem] rounded-2xl w-[75rem] p-4">
@@ -104,7 +107,10 @@ const HomeCert = () => {
                            : "bg-[#150569] hover:bg-blue-700 text-white cursor-pointer shadow-md hover:shadow-lg"
                        }`}
       >
-        Next
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+
       </span>
     </section>
   );
