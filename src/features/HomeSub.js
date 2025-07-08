@@ -14,29 +14,26 @@ export const HomeSub = () => {
       <h2 className="text-2xl sm:text-3xl font-semibold leading-tight">
         Subscribe to our email
       </h2>
-             {" "}
+
       <p className="text-base sm:text-lg max-w-md">
         Be the first to know about new collections and exclusive offers.
       </p>
-             {" "}
+
       <div className="border p-1 sm:p-2 w-full max-w-sm sm:max-w-md justify-between border-black flex flex-row items-center">
-                   {" "}
         <input
           type="email"
           className="outline-none flex-grow p-1 sm:p-2"
           placeholder="Email Address"
           aria-label="Email Address"
         />
-                   {" "}
+
         <button
           type="submit"
           className="text-white bg-red-500 p-2 sm:p-3 ml-1 text-sm sm:text-base whitespace-nowrap"
         >
           Discover More
         </button>
-               {" "}
       </div>
-         {" "}
     </div>
   );
 };
