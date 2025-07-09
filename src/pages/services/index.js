@@ -1,12 +1,13 @@
 import ServiceTab from "@/features/ServiceTab";
-import { realEstate, servicesImg } from "@/features/assets";
+import { realEstate, seeLove, speak, servicesImg } from "@/features/assets";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const index = () => {
   const services = [
     {
       title: "Real estate marketing",
+      img: seeLove.src,
       icon: "📢",
       description:
         "We have one of the most sophisticated marketing structures in the world that helps us promote genuine properties and meet clients at various touch points of their buying journey. Our clients have a wonderful array of properties to choose from, our process is seamless and our allocation is instant. Clients can easily be assured of value for money spent.",
@@ -15,12 +16,14 @@ const index = () => {
     {
       title: "Real Estate Development & Management",
       icon: "🏗️",
+      img: realEstate.src,
       description:
         "We have one of the most sophisticated marketing structures in the world that helps us promote genuine properties and meet clients at various touch points of their buying journey. Our clients have a wonderful array of properties to choose from, our process is seamless and our allocation is instant. Clients can easily be assured of value for money spent.",
       isActive: true,
     },
     {
       title: "Seminars & Trainings",
+      img: speak.src,
       icon: "🎤",
       description:
         "We have one of the most sophisticated marketing structures in the world that helps us promote genuine properties and meet clients at various touch points of their buying journey. Our clients have a wonderful array of properties to choose from, our process is seamless and our allocation is instant. Clients can easily be assured of value for money spent.",
@@ -28,7 +31,15 @@ const index = () => {
     },
   ];
 
-  const activeService = services.find((service) => service.isActive);
+  const [activeInd, setActiveInd] = useState(1)
+
+  const handleSetActive = (index) => {
+    setActiveInd(index)
+  }
+
+  const activeService = services[activeInd]
+
+  // const activeService = services.find((service) => service.isActive);
 
   return (
     <div>
@@ -55,12 +66,13 @@ const index = () => {
 
         <div className="flex flex-col md:flex-row gap-4 md:gap-7 mt-6">
           <div className="grid grid-cols-1 gap-4 w-full md:w-1/3 max-w-5xl">
-            {services.map((service) => (
+            {services.map((service, index) => (
               <ServiceTab
                 key={service.title}
                 title={service.title}
                 icon={service.icon}
-                isActive={service.isActive}
+                isActive={index === activeInd}
+                onClick={() => handleSetActive(index)}
               />
             ))}
           </div>
@@ -69,7 +81,7 @@ const index = () => {
             <div className="bg-white rounded shadow p-6 flex flex-col md:flex-row mt-8 w-full md:max-w-5xl">
               <div className="rounded flex justify-center items-center w-full md:w-[400px]">
                 <Image
-                  src={realEstate.src}
+                  src={activeService.img}
                   alt="realestate"
                   width={400}
                   height={500}

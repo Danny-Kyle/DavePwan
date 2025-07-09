@@ -138,7 +138,7 @@ const HomeCert = () => {
           {/* Content Section */}
           <div className="w-full lg:w-1/2 flex flex-col text-center lg:text-left items-center lg:items-start pt-4 lg:pt-0">
             <div className="flex flex-col gap-4 mb-6">
-              <span className="text-xl font-medium text-gray-700">Project {currentId}</span>
+              <span className="text-xl font-medium text-gray-700">{currentId} / 3</span>
               <div>
                 <h3 className="text-3xl sm:text-4xl font-semibold text-gray-800 leading-tight">
                   {currentPicture.title}
@@ -197,10 +197,11 @@ const HomeCert = () => {
       </div>
 
       {/* Navigation Buttons for Desktop (outside the box) */}
+      <div className="absolute top-1/2 flex flex-row w-full justify-between">
       <button
         onClick={previous}
         disabled={currentId === 1}
-        className={`hidden lg:flex relative z-20 items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 ml-4
+        className={`hidden lg:flex ml-26 relative z-20 items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-200
                          ${
                            currentId === 1
                              ? "bg-gray-300 text-gray-500 cursor-not-allowed opacity-50"
@@ -215,7 +216,7 @@ const HomeCert = () => {
       <button
         onClick={next}
         disabled={currentId === pictures.length}
-        className={`hidden lg:flex relative z-20 items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 mr-4
+        className={`hidden lg:flex relative z-20 items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 mr-26
                          ${
                            currentId === pictures.length
                              ? "bg-gray-300 text-gray-500 cursor-not-allowed opacity-50"
@@ -227,6 +228,7 @@ const HomeCert = () => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
         </svg>
       </button>
+      </div>
     </section>
   );
 };
