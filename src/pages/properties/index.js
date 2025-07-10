@@ -91,8 +91,9 @@ const index = () => {
     <div>
       <div className="bg-cover bg-center text-white -mt-18 h-[42rem] flex flex-col justify-center items-center text-center"
       style={{ backgroundImage: `url(${propsBg.src})`}}>
-        <h1 className="text-6xl font-semibold">Our Properties</h1>
-        <p className="max-w-xl mt-4">
+        <div className="absolute inset-0 h-[37.5rem] bg-black opacity-40"></div>
+        <h1 className="relative text-6xl font-semibold">Our Properties</h1>
+        <p className="relative max-w-xl mt-4">
           Exposing clients to goldmine that abounds in land and housing globally
           and spreading empowerment through real estate opportunities.
         </p>

@@ -44,7 +44,7 @@ const index = () => {
   return (
     <div>
       <div
-        className="relative text-white p-6 md:p-12 h-[20rem] md:h-[32rem] flex flex-col justify-center items-center text-center "
+        className="relative text-white p-6 md:p-12 h-[20rem] md:h-[36.5rem] flex flex-col justify-center items-center text-center "
       >
         <Image 
         src={servicesImg.src}
@@ -54,8 +54,9 @@ const index = () => {
         quality={80}
         className="absolute inset-0 -z-30 -mt-18"
         />
-        <h1 className="text-3xl md:text-6xl font-semibold">Our Services</h1>
-        <p className="max-w-xs sm:max-w-md md:max-w-2xl mt-4">
+        <div className="absolute inset-0 h-[15.5rem] md:h-[32rem] bg-black opacity-40"></div>
+        <h1 className="relative text-3xl md:text-6xl font-semibold">Our Services</h1>
+        <p className="relative max-w-xs sm:max-w-md md:max-w-2xl mt-4">
           Exposing clients to goldmine that abounds in land and housing globally
           and spreading empowerment through real estate opportunities.
         </p>
