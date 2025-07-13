@@ -9,8 +9,7 @@ export const HomeCardGrid = ({ cards }) => (
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <span className="relative top-80 ml-12 text-white font-extralight text-lg md:text-4xl">Our Experience </span>
         <div>
-          <p className=" relative text-lg md:text-2xl top-[22rem] leading-relaxed text-center px-4 max-w-3xl text-white font-light mb-4">
-            {" "}
+          <p className=" relative text-lg md:text-2xl top-[22rem] leading-relaxed text-start ml-4 md:ml-10 max-w-3xl text-white font-light">
             With over a decade of excellence in the real estate industry, PWAN Elite has helped thousands of clients secure genuine properties across Nigeria. From residential plots to estate development, our deep market knowledge and trusted network make us a leading force in property investment.
           </p>
         </div>
