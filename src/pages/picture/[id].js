@@ -106,8 +106,8 @@ const activeDiff = getActiveDiff(title)
       <section className="w-full flex flex-col items-center mx-auto mt-16">
         <p className="font-medium text-xl mb-4">Gift Your Loved Ones The Gift Of <span className="text-red-400">Homeownership</span></p>
         <div className="flex flex-col items-start w-2/5">
-            <p>Current Title: {title}</p>
-        <p>Active differential index: {activeDiff}</p>
+            {/* <p>Current Title: {title}</p>
+        <p>Active differential index: {activeDiff}</p> */}
         <div dangerouslySetInnerHTML={{ __html: differential[activeDiff].text}} />
         </div>
         </section>
