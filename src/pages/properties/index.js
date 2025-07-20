@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {propsBg, akuRuo, speak, urbanLegacy,seeLove,eastView, handpick} from "@/features/assets"
+import {propsBg, akuRuo, speak, urbanLegacy,seeLove,eastView, koleAyo, handpick, alaomaLuxury, obiEze, eliteCity, eliteCasa, eliteEmpire, greenView, ugochiEstate} from "@/features/assets"
 import Image from 'next/image'
 import PropFeaturesCard from '@/features/PropFeaturesCard';
 import PropPropertiesCard from '@/features/PropPropertiesCard';
@@ -33,6 +33,14 @@ const index = () => {
       src: urbanLegacy
     },
     {
+      title: "Kole Ayo Estate",
+      location: "Lagos",
+      description:
+        "Located at Anobi London Road, Irangushi, Epe, Kole Ayo Estate comes with a Freehold title and immediate allocation. It’s near major landmarks like YabaTech Epe, LASUED, and St. Augustine University. Fenced, plotted, and ready for development—ideal for investors or homebuyers in a fast-growing area.",
+      imageAlt: "Kole Ayo Estate",
+      src: koleAyo
+    },
+    {
       title: "Eastview Phase 3",
       location: "Delta",
       description:
@@ -41,8 +49,64 @@ const index = () => {
       src: eastView
     },
     {
-      title: "AKU RUO UNO",
+      title: "Alaoma Luxury",
       location: "Imo",
+      description:
+        "Located in Ochicha, Obike, Ngor-Okpala, Alaoma Luxury Estate offers high ROI potential in a fast-developing area. Surrounded by key landmarks like Tony Chukwu Factory, Zion Ministry by Ebuka Obi, and Umueme Market Square, the estate is fenced, plotted, and comes with a Deed of Assignment and Registered Survey.",
+      imageAlt: "Alaoma Luxury",
+      src: alaomaLuxury
+    },
+    {
+      title: "Obi-Eze",
+      location: "Delta",
+      description:
+        "Located in Umueze Ibusa, Asaba, Obieze 2 is selling for ₦10M in a fast-developing, buy-and-build area along a major road. It’s just 18 minutes from Koka Flyover and close to key landmarks like FGGC Ibusa, General Hospital, and Ibusa Main Market.",
+      imageAlt: "Obi-Eze",
+      src: obiEze
+    },
+     {
+      title: "Elite City",
+      location: "Delta",
+      description:
+        "Located in Idasa, Agbara, this estate comes with a Certificate of Occupancy (C of O) and sits in a high-demand, fast-growing area ideal for residential or commercial development.\n Surrounded by landmarks like Optic Estate, Lusada, Crown City Parks & Resorts, and Ijuri Catholic Church, the estate is fenced, plotted, and offers immediate allocation. With strong ROI potential, it’s perfect for investors with vision.",
+      imageAlt: "Elite City",
+      src: eliteCity
+    },
+    {
+      title: "Elite Casa",
+      location: "Lagos",
+      description:
+        "Located in Idasa, Agbara, this estate comes with a Certificate of Occupancy (C of O) and sits in a high-demand, fast-growing area ideal for residential or commercial development.\n Surrounded by landmarks like Optic Estate, Lusada, Crown City Parks & Resorts, and Ijuri Catholic Church, the estate is fenced, plotted, and offers immediate allocation. With strong ROI potential, it’s perfect for investors with vision.",
+      imageAlt: "Elite Casa",
+      src: eliteCasa
+    },
+    {
+      title: "Elite Empire",
+      location: "Imo",
+      description:
+        "Elite Empire is strategically located in Avu-Oforola, a fast-growing area ideal for premium real estate investment. Surrounded by notable landmarks like Control Bus Stop, Avu Junction, Imo State Automobile Hub, and Deeper Life Camp Ground, it offers strong prospects for residential or commercial use.",
+      imageAlt: "Elite Empire",
+      src: eliteEmpire
+    },
+    {
+      title: "Green View",
+      location: "Delta",
+      description:
+        "Located in Ogwashi within the Asaba capital territory, Greenview Estate is selling for ₦3.5M in a fast-developing, buy-and-build area with houses and hostels already rising nearby. It sits along a major road and is just 15–20 minutes from key junctions and Asaba International Airport.",
+      imageAlt: "Green View",
+      src: greenView
+    },
+    {
+      title: "Ugochi Estate",
+      location: "Delta",
+      description:
+        "Located in Ogwashi within the Asaba capital territory, Greenview Estate is selling for ₦3.5M in a fast-developing, buy-and-build area with houses and hostels already rising nearby. It sits along a major road and is just 15–20 minutes from key junctions and Asaba International Airport.",
+      imageAlt: "Ugochi Estate",
+      src: ugochiEstate
+    },
+    {
+      title: "AKU RUO UNO",
+      location: "Delta",
       description:
         "PWAN ELITE is passionate about revealing the amazing potentials available in the real estate industry to the world by providing cost-effective luxury properties to help clients become land/home owners easily and faster.",
       imageAlt: "AKU RUO UNO",
