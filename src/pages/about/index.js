@@ -95,13 +95,11 @@ We guarantee scam-free properties and transactions, preventing fraudulent real e
       </span>
       Values
     </p>
-    <h2 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 leading-tight">Our Purpose</h2>
+    <h2 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 leading-tight">Our Purpose and Values</h2>
   </div>
 
   <div className="w-full lg:w-1/2 text-base sm:text-lg text-gray-700 leading-relaxed max-w-prose">
-    Lorem ipsum dolor sit amet consectetur. Feugiat tortor morbi
-    dictum egestas donec mus at porttitor. Magna facilisis duis nunc
-    porttitor metus suspendisse turpis dignissim.
+    PWAN Elites, our purpose is to empower individuals and communities through innovative real estate solutions that promote prosperity, dignity, and legacy. We exist to make homeownership and property investment accessible, reliable, and rewarding for every Nigerian, regardless of background.
   </div>
 </article>
 

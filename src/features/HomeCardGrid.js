@@ -15,9 +15,9 @@ export const HomeCardGrid = ({ cards }) => (
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {cards.map((card) => (
+        {cards.map((card, index) => (
           <HomeExp 
-            key={card.id}
+            key={index}
             {...card}
           />
         ))}
