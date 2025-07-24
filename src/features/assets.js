@@ -26,6 +26,10 @@ import Okoro from "@/assets/Okoro.jpg";
 import homeBg from "@/assets/homeBg.jpg";
 import homeValuesImg from "@/assets/homeValues.png";
 import yearsOfExp from "@/assets/yearsOfExp.png";
+import eliteEastLand1 from "@/assets/eliteEastLand1.jpeg";
+import eliteEastland2 from "@/assets/eliteEastland2.jpeg";
+import ugwumbaEstate from "@/assets/ugwumbaEstate.jpeg";
+import waleGraphic from "@/assets/waleGraphic.jpeg";
 
 export {
   propsBg,
@@ -45,7 +49,11 @@ export {
   obiEze,
   ugochiEstate,
   eastView,
+  eliteEastLand1,
+  eliteEastland2,
   eliteEmpire,
+  ugwumbaEstate,
+  waleGraphic,
   greenView,
   FaqImg,
   logo,

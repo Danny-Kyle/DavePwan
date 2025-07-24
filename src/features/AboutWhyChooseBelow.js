@@ -1,7 +1,7 @@
 import React from "react";
 import AWCBSection from "./AWCBSection";
 import Image from "next/image";
-import { urbanLegacy, Emeka, Kudirat, Joshua, Okoro } from "./assets";
+import { urbanLegacy, Emeka, Kudirat, Joshua, Okoro, waleGraphic } from "./assets";
 
 const AboutWhyChooseBelow = () => {
   const teamMembers = [
@@ -12,18 +12,23 @@ const AboutWhyChooseBelow = () => {
     },
     {
       name: "Kudirat Abdulahi",
-      title: "Managing Director",
+      title: "Head of Admin, Asaba Office",
       src: Kudirat,
     },
     {
       name: "Mr. Joshua Godwin",
-      title: "Managing Director",
+      title: "Mentee",
       src: Joshua,
     },
     {
       name: "MR. Iheanacho Okoro",
-      title: "Managing Director",
+      title: "Mentee",
       src: Okoro,
+    },
+    {
+      name: "MR. Ayodele Olawale",
+      title: "Graphic Designer",
+      src: waleGraphic,
     },
   ];
 
