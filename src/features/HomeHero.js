@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'; // <<< Import Link from next/link
 import { homeBg } from "./assets";
 
 const ArrowRightUpIcon = ({ className }) => (
@@ -17,29 +18,39 @@ const ArrowRightUpIcon = ({ className }) => (
 );
 
 export const HomeHero = ({ title, subtitle, description, ctaButton }) => (
+  // Added 'relative' to the parent div so the absolute overlay is positioned correctly
   <div
-    className="h-[46rem] -mt-18 bg-cover  bg-center"
+    className="h-[46rem] -mt-18 bg-cover bg-center relative"
     style={{ backgroundImage: `url(${homeBg.src})` }}
   >
+    {/* Overlay: Changed height to 'inset-0' to cover the whole parent,
+        and increased opacity to 'opacity-60' for better contrast.
+        Adjust opacity-60 to opacity-50 or opacity-70 if you want it lighter/darker. */}
     <div
-      className="absolute inset-0 h-[41.5rem] bg-black opacity-40"
+      className="absolute inset-0 bg-black opacity-60"
       aria-hidden="true"
     ></div>
 
     <div className="relative flex items-center h-full">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl text-white">
-          <h1 className="text-7xl md:text-6xl font-semibold mb-6 leading-tight">
+          {/* Added 'relative z-10' to ensure text is always above the overlay */}
+          <h1 className="text-7xl md:text-6xl font-semibold mb-6 leading-tight relative z-10">
             {title}
           </h1>
-          {description && <p className="text-lg mb-8">{description}</p>}
-          {ctaButton && (
-            <button className="bg-white hover:bg-red-700 text-black px-4 py-3 rounded-lg text-lg font-semibold flex items-center">
-              {ctaButton.text}
-              <span className="ml-3 bg-red-600 p-2 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
-              <ArrowRightUpIcon className="w-5 h-5 text-white" /> 
-            </span>
-            </button>
+          {description && <p className="text-lg mb-8 relative z-10">{description}</p>}
+
+          {/* Conditional rendering: Only show the button if ctaButton and its href exist */}
+          {ctaButton && ctaButton.href && (
+            // <<< Changed from <button> to <Link> for navigation >>>
+            <Link href={ctaButton.href} legacyBehavior>
+              <a className="bg-white hover:bg-red-700 text-black px-3 py-3 rounded-lg text-lg font-semibold inline-flex items-center relative z-10">
+                {ctaButton.text}
+                <span className="ml-3 bg-red-600 p-2 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                  <ArrowRightUpIcon className="w-5 h-5 text-white" />
+                </span>
+              </a>
+            </Link>
           )}
         </div>
       </div>

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { logo } from './assets';
 import { useRouter } from 'next/router';
+import { logo } from './assets'; // Assuming 'logo' is imported from './assets'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md shadow">
       <div className="container px-6 py-4 mx-auto">
         <div className="flex items-center justify-between">
-          
+
           {/* Logo (Beginning) */}
           <div className="flex items-center">
             <Link href="/" className="cursor-pointer">
@@ -44,8 +44,8 @@ const Navbar = () => {
                   className={`
                     text-sm font-medium transition-colors duration-300 relative
                     hover:text-red-500 dark:hover:text-red-400
-                    ${router.pathname === item.href 
-                      ? 'text-red-500 dark:text-red-400' 
+                    ${router.pathname === item.href
+                      ? 'text-red-500 dark:text-red-400'
                       : 'text-gray-700 dark:text-gray-200'
                     }
                   `}
@@ -60,12 +60,12 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Get Started Button (End) */}
+          {/* Get Started Button (End) - Desktop */}
           <div className="hidden lg:flex items-center">
             <button
               className="px-6 py-2 text-sm font-medium text-white bg-red-600 hover:bg-blue-950 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors duration-300"
               onClick={() => {
-                router.push('/get-started');
+                router.push('/properties'); // <<< CHANGED THIS LINE
               }}
             >
               Get Started
@@ -121,8 +121,8 @@ const Navbar = () => {
                 className={`
                   block px-3 py-2 text-base font-medium transition-colors duration-300 relative
                   hover:text-red-500 dark:hover:text-red-400
-                  ${router.pathname === item.href 
-                    ? 'text-red-500 dark:text-red-400' 
+                  ${router.pathname === item.href
+                    ? 'text-red-500 dark:text-red-400'
                     : 'text-gray-700 dark:text-gray-200'
                   }
                 `}
@@ -135,13 +135,13 @@ const Navbar = () => {
                 )}
               </Link>
             ))}
-            
+
             {/* Mobile Get Started Button */}
             <div className="px-3 pt-4">
               <button
                 className="w-full px-6 py-2 text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors duration-300"
                 onClick={() => {
-                  router.push('/get-started');
+                  router.push('/properties'); // <<< CHANGED THIS LINE
                   setIsOpen(false);
                 }}
               >

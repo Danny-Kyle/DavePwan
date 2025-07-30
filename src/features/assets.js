@@ -9,6 +9,14 @@ import contactBg from "@/assets/contactBg.png";
 import FaqImg from "@/assets/FaqImg.png";
 import akuRuo from "@/assets/akuRuo.png";
 import urbanLegacy from "@/assets/urbanLegacy.jpg";
+import koleAyo from "@/assets/koleAyo.png";
+import alaomaLuxury from "@/assets/alaomaLuxury.png";
+import eliteCasa from "@/assets/eliteCasa.jpeg";
+import eliteCity from "@/assets/eliteCity.png";
+import eliteEmpire from "@/assets/eliteEmpire.png";
+import greenView from "@/assets/greenView.png";
+import obiEze from "@/assets/obiEze.png";
+import ugochiEstate from "@/assets/ugochiEstate.png";
 import eastView from "@/assets/eastView.png";
 import aboutBg from "@/assets/aboutBg.jpg";
 import Emeka from "@/assets/Emeka.jpg";
@@ -18,6 +26,10 @@ import Okoro from "@/assets/Okoro.jpg";
 import homeBg from "@/assets/homeBg.jpg";
 import homeValuesImg from "@/assets/homeValues.png";
 import yearsOfExp from "@/assets/yearsOfExp.png";
+import eliteEastLand1 from "@/assets/eliteEastLand1.jpeg";
+import eliteEastland2 from "@/assets/eliteEastland2.jpeg";
+import ugwumbaEstate from "@/assets/ugwumbaEstate.jpeg";
+import waleGraphic from "@/assets/waleGraphic.jpeg";
 
 export {
   propsBg,
@@ -30,7 +42,19 @@ export {
   aboutBg,
   akuRuo,
   urbanLegacy,
+  koleAyo,
+  alaomaLuxury,
+  eliteCasa,
+  eliteCity,
+  obiEze,
+  ugochiEstate,
   eastView,
+  eliteEastLand1,
+  eliteEastland2,
+  eliteEmpire,
+  ugwumbaEstate,
+  waleGraphic,
+  greenView,
   FaqImg,
   logo,
   handpick,

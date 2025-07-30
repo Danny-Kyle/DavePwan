@@ -31,7 +31,7 @@ export const HomeSub = () => {
           type="submit"
           className="text-white bg-red-500 p-2 sm:p-3 ml-1 text-sm sm:text-base whitespace-nowrap"
         >
-          Discover More
+          Subscribe
         </button>
       </div>
     </div>

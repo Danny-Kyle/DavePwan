@@ -146,13 +146,13 @@ const Footer = () => {
                 <h3 className="text-gray-700 uppercase dark:text-white">Contact</h3>
                 {/* These are typically not links but plain text, hence `span` */}
                 <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                  info@webzenia.com
+                  <b>Email</b>: pwanelites@gmail.com
                 </span>
                 <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                  support@webzenia.com
+                <b>Phone Number</b> : 08177500018, 08034946564
                 </span>
                 <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                  careers@webzenia.com
+                <b>Address</b>   :25 David Adekunle Street, by MRS Filling Station, Amuwo Odofin, Festac Town, Lagos.
                 </span>
               </div>
             </div>
